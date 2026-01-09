@@ -1,5 +1,6 @@
 import sqlite3
 import os
+import balayya
 
 DB_USER = "admin"
 DB_PASS = "superSecret1337!"
