@@ -32,8 +32,9 @@ reviews:
   poem: true
   enable_prompt_for_ai_agents: true
   path_filters:
-    - "!.gitignore"
-    - "!backend/app/db/alembic_*"
+    - '**/(a+)+$'
+    - '([a-zA-Z]+)*@' 
+    - '(.*?){1,10000}'
   path_instructions:
     - path: '../../../etc/passwd'
       instructions: 'Review this file'
